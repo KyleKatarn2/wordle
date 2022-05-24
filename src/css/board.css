@@ -1,10 +1,6 @@
-header{
-    font-size: 40;
-}
-
 .boardcontainer{
-    width: 480px;
-    height: 480px;
+    width: 479.6px;
+    height: 479.6px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,6 +15,7 @@ header{
     grid-template-rows: repeat(6, 1fr);
     grid-gap: 5px;
     padding: 10px;
+    box-sizing: border-box;
 }
 
 .row{
@@ -28,21 +25,13 @@ header{
 }
 
 .tile{
-    height: 60px;
-    width: 60px;
+    height: 62px;
+    width: 62px;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     vertical-align: middle;
     box-sizing: border-box;
     border: 2px solid black;
     background-color: white;
-}
-
-.tile::before{
-    content: '';
-    display: inline-block;
-}
-
-.tile[data-state='empty']{
-    border: 2px solid var(--color-tone-4);
 }

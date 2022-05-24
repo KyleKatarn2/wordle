@@ -13,20 +13,22 @@ const Keyboard = (props) => {
         <div id = "keyboard">
             <div className='r1'>
                 {keyRow1.map((key, index) => {
-                    return <keyboard key = {index} onKeyPressed = {props.onKeyPressed} text = {key} />
+                    return <KeyboardActions key = {index} onKeyPressed = {props.onKeyPressed} text = {key} />
                 })}
             </div>
             
             <div className='r2'>
                 {keyRow2.map((key, index) => {
-                    return <keyboard key = {index} onKeyPressed = {props.onKeyPressed} text = {key} />
+                    return <KeyboardActions key = {index} onKeyPressed = {props.onKeyPressed} text = {key} />
                 })}
             </div>
             
             <div className='r3'>
+                <KeyboardActions onKeyPressed ={props.onKeyPressed} text = {"Enter"} bigKey />
                 {keyRow3.map((key, index) => {
-                    return <keyboard key = {index} onKeyPressed = {props.onKeyPressed} text = {key} />
+                    return <KeyboardActions key = {index} onKeyPressed = {props.onKeyPressed} text = {key} />
                 })}
+                <KeyboardActions onKeyPressed = {props.onKeyPressed} text = {"Delete"} bigKey />
             </div>
         </div>
     )
