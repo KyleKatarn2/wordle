@@ -2,6 +2,16 @@ header{
     font-size: 40;
 }
 
+.boardcontainer{
+    width: 480px;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
 .Board{
     width: 350px;
     height: 420px;

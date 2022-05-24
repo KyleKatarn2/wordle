@@ -1,0 +1,43 @@
+.keyboard{
+    width: 700px;
+    height: 300px;
+    margin-top: 60px;
+}
+
+.r1{
+    display: flex;
+    width: 100%;
+    margin: 0 auto 8px;
+}
+
+.r2{
+    display: flex;
+    width: 100%;
+    margin: 0 auto 8px;
+}
+
+.r3{
+    display: flex;
+    width: 100%;
+    margin: 0 auto 8px;
+}
+
+.key{
+    height: 58px;
+    margin: 0 6px 0 0;
+    border-radius: 4px;
+    display: flex;
+    place-items: center;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.big{
+    width: 100px;
+}

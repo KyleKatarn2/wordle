@@ -1,17 +1,24 @@
 import React from 'react'
+import { useState } from 'react';
 import Board from './Board';
-import KeyBoard from './keyboard';
+import Keyboard from './Keyboard';
 
-class BoardContainer extends React.Component {
-    constructor(props){
-        
+const BoardContainer= () => {
+    const [key, setKey] = useState("")
+
+    let handleKeyPress = (text) => {
+        console.log(text)
+        alert('Container received: ${text}')
+        setKey(text)
     }
     render() {
         return (
             <div>
                 <Board />
-                <KeyBoard />
+                <Keyboard />
             </div>
         )
     }
 }
+
+export default BoardContainer
